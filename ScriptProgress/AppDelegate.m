@@ -47,8 +47,6 @@
 
 - (void) startUserTaskWithURL:(NSURL *)scriptURL
 {
-    [self.progressBar setDoubleValue:0.0];
-    
     NSError *error = nil;
     NSUserScriptTask *task = [[NSUserScriptTask alloc] initWithURL:scriptURL error:&error];
     if (!task) {
